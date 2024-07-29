@@ -1,26 +1,28 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View } from 'react-native'
+import React from 'react'
 
 const ButtonComponent = ({ title, color }) => {
   return (
-    <View style={{
-      marginHorizontal: 10,
+    <View style={{ marginHorizontal: 10,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginVertical: 10
     }}>
     
       <Text style= {{
-        width: 340,
+        width: 350,
         height: 50,
         color: 'white',
         backgroundColor: color,
         textAlign: 'center',
-        lineHeight: 60,
+        lineHeight: 50,
         fontSize: 20,
-        borderRadius: 50,
-    }}>
-      {title}
+        borderRadius: 25,
+      }}>
+        {title}
       </Text>
     </View>
   )
 }
 
-export default ButtonComponent
+export default ButtonComponent;

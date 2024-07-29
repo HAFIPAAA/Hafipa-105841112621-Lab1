@@ -1,16 +1,16 @@
 import { View } from 'react-native'
 import React from 'react'
-import SignUp from './component/pages/signUp'
+import Login from './component/pages/login'
 
 const App = () => {
  return (
   <View style = {{
     flex: 1,
-    bbackgroundColor: '#EEEEEE'
+    backgroundColor: '#EEEEEE'
   }}>
-    <SignUp />
+    <Login />
   </View>
- )
+ );
 }
 
 export default App
