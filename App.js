@@ -1,25 +1,17 @@
-import { useFonts } from 'expo-font';
-import { Text, View } from 'react-native';
+import { View } from 'react-native'
+import React from 'react'
+import ForgotPassword from './component/pages/forgotPassword'
 
-export default function App () {
-  const [dapatFont] = useFonts ({
-    'MetroBlack' : require('./assets/fonts/Metropolis-Black.otf'),
-    'MetroBold' : require('./assets/fonts/Metropolis-Bold.otf'),
-    'MetroLight' : require('./assets/fonts/Metropolis-Light.otf'),
-    'MetroMedium' : require('./assets/fonts/Metropolis-Medium.otf'),
-    'MetroSemiBold' : require('./assets/fonts/Metropolis-SemiBold.otf'),
-  });
 
-  if (!dapatFont) 
-    return <Text>font Tidak Ditemukan Silahkan Coba Lagi...</Text>
+const App = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text style={{ fontFamily: 'MetroBold' }}>Font Metropolis Black</Text>
-          <Text style={{ fontFamily: 'MetroBold' }}>Font Metropolis Bold</Text>
-          <Text style={{ fontFamily: 'MetroLight' }}>Font Metropolis Light</Text>
-          <Text style={{ fontFamily: 'MetroMedium' }}>Font Metropolis Medium</Text>
-          <Text style={{ fontFamily: 'MetroSemiBold' }}>Font Metropolis SemiBold</Text>
-      <Text> Font Biasa </Text>
-      </View>
-    )
+    <View style = {{
+      flex: 1,
+      backgroundColor: '#EEEEEE'
+    }}>
+      <ForgotPassword />
+    </View>
+  );
 }
+
+export default App;

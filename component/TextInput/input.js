@@ -20,7 +20,7 @@ const Inputan = ({ nama, color })=>{
                 textAlignVertical: 'top',
                 textAlign: 'left',
             }}
-            secureTextEntry = {nama.toLowerCase() === 'password'}
+            secureTextEntry = {nama === 'password'}
         />
     );
 }

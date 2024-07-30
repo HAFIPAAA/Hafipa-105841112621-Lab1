@@ -39,28 +39,26 @@ const ForgotPassword= () => {
                     fontSize: 16,
                     marginBottom: 10
                 }}>
-                    Please, enter your email address, you will receive a link to create a new Password via email.
+                    Please, enter your email address. You will receive a link to create a new Password via email.
                    </Text>
-                   <Inputan nama = "Email" color = "black" />
+                   <Inputan name = "Email" color = "black" />
                    <Text style = {{
-                        fontSize: 12,
-                        paddingHorizontal: 20,
-                        color: 'red',
-                        marginTop: 5
+                       fontSize: 12,
+                       paddingHorizontal: 20,
+                       color: 'red',
+                       marginTop: 5    
                    }}>
-                        Not a valid email address. Should be your@email.com
-
+                       Not a valid email address. Should be your@email.com
+                    
                    </Text>
                 </View>
-
-            <ButtonComponent title = "SEND" color = "red" />
+                
+            <ButtonComponent title = "SEND" color = "red" />  
         </View>
+                
 
-
-        
+                
         );
 }
 
 export default ForgotPassword;
-
-    
